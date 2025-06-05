@@ -3,8 +3,8 @@
  * typo-prone strings.
  */
 export enum WagonTag {
-	CanPlace,
-	WagonFull,
-	WagonEmpty,
-	Wagon,
+	CanPlace = "CanPlace",
+	WagonFull = "WagonFull",
+	WagonEmpty = "WagonEmpty",
+	Wagon = "Wagon",
 }

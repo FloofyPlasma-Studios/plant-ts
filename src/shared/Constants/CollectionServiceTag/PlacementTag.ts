@@ -3,6 +3,6 @@
  * used by CallToAction logic to determine when to show the CTA
  */
 export enum PlacementTag {
-	CanPlaceTable,
-	CanPlacePot,
+	CanPlaceTable = "CanPlaceTable",
+	CanPlacePot = "CanPlacePot",
 }

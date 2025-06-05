@@ -3,5 +3,5 @@
  * the vendor is enabled, such as during the First-Time User Experience
  */
 export enum VisibleWhenVendorEnabledTag {
-	VisibleWhenVendorEnabled,
+	VisibleWhenVendorEnabled = "VisibleWhenVendorEnabled",
 }

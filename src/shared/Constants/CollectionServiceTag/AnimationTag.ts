@@ -3,6 +3,6 @@
  * in the world to animate
  */
 export enum AnimationTag {
-	AnimatedRoosterNPC,
-	AnimatedShopSymbol,
+	AnimatedRoosterNPC = "AnimatedRoosterNPC",
+	AnimatedShopSymbol = "AnimatedShopSymbol",
 }

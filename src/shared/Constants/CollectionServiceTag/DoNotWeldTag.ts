@@ -4,5 +4,5 @@
  * is connected separately with a HingeConstraint and needs to be free to move.
  */
 export enum DoNotWeldTag {
-	DoNotWeld,
+	DoNotWeld = "DoNotWeld",
 }

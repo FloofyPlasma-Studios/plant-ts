@@ -3,5 +3,5 @@
  * typo-prone strings.
  */
 export enum ZonePartTag {
-	ZonePart,
+	ZonePart = "ZonePart",
 }

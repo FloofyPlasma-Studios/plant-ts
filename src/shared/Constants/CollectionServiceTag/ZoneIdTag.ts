@@ -3,8 +3,8 @@
  * typo-prone strings.
  */
 export enum ZoneIdTag {
-	InFarm,
-	InMarket,
-	InShop,
-	InGardenStore,
+	InFarm = "InFarm",
+	InMarket = "InMarket",
+	InShop = "InShop",
+	InGardenStore = "InGardenStore",
 }

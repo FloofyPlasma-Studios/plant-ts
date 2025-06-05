@@ -3,6 +3,6 @@
  * the vendor is enabled, such as during the First-Time User Experience
  */
 export enum PotTag {
-	CanPlant,
-	CanRemove,
+	CanPlant = "CanPlant",
+	CanRemove = "CanRemove",
 }
