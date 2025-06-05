@@ -3,10 +3,10 @@
  * FTUE state and elsewhere to show appropriate prompts and customize the world according to the stage
  */
 export enum FtueStage {
-	InFarm,
-	SellingPlant,
-	PurchasingSeed,
-	PurchasingPlot,
-	ReturningToFarm,
-	Complete,
+	InFarm = "InFarm",
+	SellingPlant = "SellingPlant",
+	PurchasingSeed = "PurchasingSeed",
+	PurchasingPot = "PurchasingPot",
+	ReturningToFarm = "ReturningToFarm",
+	Complete = "Complete",
 }
