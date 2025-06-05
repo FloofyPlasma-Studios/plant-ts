@@ -13,12 +13,14 @@ type PairsResult<T extends Instance> = IterableFunction<LuaTuple<MappedPropertie
     by creating a table of properties and a ClassName instead.
 */
 
-export function createInstanceTree<T extends keyof CreatableInstances>(tree: {
-	className: T;
-	properties?: PropertiesTable<CreatableInstances[T]>;
-	children?: Array<typeof tree>;
-}): Instance {
-	const object = new Instance(tree.className);
+export function createInstanceTree<T extends keyof CreatableInstances>(
+	className: T,
+	tree: {
+		properties?: PropertiesTable<CreatableInstances[T]>;
+		children?: Array<typeof tree>;
+	},
+) {
+	const object = new Instance(className);
 
 	if (tree.properties !== undefined) {
 		for (const [property, value] of tree.properties as unknown as PairsResult<CreatableInstances[T]>) {
@@ -29,10 +31,10 @@ export function createInstanceTree<T extends keyof CreatableInstances>(tree: {
 
 	if (tree.children !== undefined) {
 		for (const childTree of tree.children) {
-			const childObject = createInstanceTree<T>(childTree);
+			const childObject = createInstanceTree(className, childTree);
 			childObject.Parent = object;
 		}
 	}
 
-	return object;
+	return object as CreatableInstances[T];
 }
