@@ -1,3 +1,6 @@
+/**
+ * A place to put named keybinds for consistent controls across the game
+ */
 export const Keybind = {
 	GamepadPrimaryAction: Enum.KeyCode.ButtonA,
 	GamepadBackAction: Enum.KeyCode.ButtonB,

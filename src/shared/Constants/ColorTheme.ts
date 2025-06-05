@@ -1,3 +1,8 @@
+/**
+ * A table of colors used throughout the game's user interface,
+ * defined in one place to easily update the theme of the game
+ * and create consistency across all colors.
+ */
 export const ColorTheme = {
 	Gray: Color3.fromRGB(50, 50, 50),
 	LightGray: Color3.fromRGB(180, 180, 180),

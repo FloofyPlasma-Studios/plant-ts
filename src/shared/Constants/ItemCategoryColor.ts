@@ -4,6 +4,11 @@ import { ItemCategory } from "./ItemCategory";
 type CategoryColorSchemeType = { Primary: Color3; Secondary: Color3 };
 type ItemCategoryColorsType = { [key in ItemCategory]: CategoryColorSchemeType };
 
+/**
+ * A dictionary of primary and secondary colors associated with Item Categories.
+ *
+ * Used to determine the colors a given item's ListItems should have in a ListSelector
+ */
 export const ItemCategoryColor: ItemCategoryColorsType = {
 	[ItemCategory.Plants]: {
 		Primary: ColorTheme.Green,

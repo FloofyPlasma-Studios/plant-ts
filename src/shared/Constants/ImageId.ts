@@ -1,3 +1,8 @@
+/**
+ * 	A table of imageIds used throughout the game's user interface,
+ * defined in one place to easily update track which assets are
+ * set at runtime and give names to each asset id.
+ */
 export const ImageId = {
 	WaterIcon: 11436937738,
 	PlantSeedIcon: 11436937806,
