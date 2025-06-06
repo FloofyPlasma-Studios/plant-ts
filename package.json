@@ -31,6 +31,7 @@
     "@rbxts/react": "^17.2.3",
     "@rbxts/react-roblox": "^17.2.3",
     "@rbxts/services": "^1.5.5",
+    "@rbxts/t": "^3.2.1",
     "@rbxutil/signal": "^2.0.3"
   }
 }
