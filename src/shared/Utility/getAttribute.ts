@@ -8,8 +8,8 @@ import { Attribute } from "shared/Constants/Attribute";
 */
 
 export function getAttribute<T>(instance: Instance, attributeName: keyof Attribute): T {
-	const value = instance.GetAttribute(attributeName);
-	assert(value !== undefined, `${attributeName} is not a valid attribute of ${instance.GetFullName()}`);
+	const value = instance.GetAttribute(attributeName as string);
+	assert(value !== undefined, `${attributeName as string} is not a valid attribute of ${instance.GetFullName()}`);
 
 	return value as T;
 }
